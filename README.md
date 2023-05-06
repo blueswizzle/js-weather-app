@@ -17,7 +17,7 @@ Simply enter a location into the input field and press "enter". The site will fe
 - Displays Humidity and Wind Speed for user-specified location
 - Background changes to depict the location's current weather conditions
 
-## Usage
+## Cloning
 
 To run this project on your local machine, follow these steps:
 
