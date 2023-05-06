@@ -37,7 +37,7 @@ search.addEventListener("keydown", (e) => {
                 }
                 error.style.display = 'none';
                 error.classList.remove('fadeIn');
-                console.log(json)
+        
                 const wIcon = document.getElementById('background')
                 const desc = document.querySelector('.w-desc');
                 const temp = document.querySelector('.w-temp');
