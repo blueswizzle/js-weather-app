@@ -4,7 +4,7 @@
 
 This is a simple weather app created with HTML, CSS, and JavaScript. It uses the OpenWeather API to fetch the current weather conditions for a user-specified location and displays the results on the page.
 
-To watch a video demonstrating the site, go here:  
+To watch a video demonstrating the site, go here: https://www.youtube.com/watch?v=eW-yhShrPf4
 
 ## Usage
 
