@@ -3,7 +3,6 @@ const apiKey = "4a8eadf00ca658203f3cdf6c889a5c03";
 const container = document.querySelector('.container');
 const search = document.getElementById('search');
 search.value = '';
-const searchButton = document.getElementById('search-button');
 const error = document.querySelector('.not-found');
 const weather = document.querySelector('.weather');
 const weatherDetails = document.querySelector('.weather-details');
@@ -29,7 +28,7 @@ search.addEventListener("keydown", (e) => {
             .then(response => response.json())
             .then(json =>{
                 if(json.cod === '404'){
-                    container.style.height = '500px';
+                    container.style.height = '390px';
                     weather.style.display = 'none';
                     weatherDetails.style.display = 'none';
                     error.style.display = 'block';
@@ -38,8 +37,8 @@ search.addEventListener("keydown", (e) => {
                 }
                 error.style.display = 'none';
                 error.classList.remove('fadeIn');
-
-                const wIcon = document.querySelector('.w-icon');
+                console.log(json)
+                const wIcon = document.getElementById('background')
                 const desc = document.querySelector('.w-desc');
                 const temp = document.querySelector('.w-temp');
                 const humidity = document.querySelector('.humidity');
@@ -47,26 +46,30 @@ search.addEventListener("keydown", (e) => {
                 const location = document.querySelector('.w-location');
                 switch(json.weather[0].main){
                     case 'Clear':
-                    wIcon.src = 'images/clear.png';
+                    wIcon.src = 'images/sunny.mp4';
                     break;
 
                     case 'Rain':
-                    wIcon.src = 'images/rain.png';
+                    wIcon.src = 'images/rain.mp4';
                     break;
 
                     case 'Snow':
-                    wIcon.src = 'images/snow.png';
+                    wIcon.src = 'images/snow.mp4';
                     break;
 
                     case 'Clouds':
-                    wIcon.src = 'images/clouds.png';
+                    wIcon.src = 'images/cloudy.mp4';
                     break;
 
                     case 'Haze':
                     case 'Mist':
-                    wIcon.src = 'images/mist.png';
+                    wIcon.src = 'images/mist.mp4';
                     break;
-                    
+
+                    case 'Thunderstorm':
+                    wIcon.src = 'images/thunderstorm.mp4';
+                    break;
+
                     default:
                     wIcon.src = '';
 
@@ -88,7 +91,7 @@ search.addEventListener("keydown", (e) => {
                 weatherDetails.style.display = '';
                 weather.classList.add('fadeIn');
                 weatherDetails.classList.add('fadeIn');
-                container.style.height = '500px';
+                container.style.height = '300px';
 
             })
     }

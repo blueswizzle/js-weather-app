@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="backgroundVideo">
+        <video id="background" autoplay loop muted>
+            <source src="images/placeholder.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="container">
         <div class="search-box">
             <input type="search" id="search" placeholder="Search Location" spellcheck="false">
-            <button id="search-button">
-                <img src="images/search.png" alt="">
-            </button>
             <button id="measurement" title="Toggle Measurement System">
                 <p>I</p>
             </button>
@@ -25,7 +27,6 @@
         </div>
 
         <div class="weather">
-            <img src="images/rain.png" alt="" class="w-icon">
             <h2 class="w-desc">Sunny</h2>
             <h1 class="w-temp">70°F</h1>
             <h2 class="w-location">Florida</h2>

@@ -9,10 +9,22 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(1, 1, 1, 0.8);
+}
+
+#background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    filter: brightness(1.2);
+    z-index: -2;
 }
 
 .container{
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: rgba(0, 0, 0, 0.8);
     width: 90%;
     max-width: 500px;
     color:white;
@@ -22,6 +34,10 @@ body{
     height: 92px;
     overflow: hidden;
     transition: 0.35s ease-out;
+    display: flex;
+    flex-direction: column;
+    
+
 }
 .search-box{
     width: 100%;
@@ -60,19 +76,15 @@ body{
 .search-box button:hover{
     transform: scale(1.6);
 }
-#search-button{
-    margin-right: 1.1rem;
+.weather{
+    margin-top: 2.5rem;
 }
 .weather-details{
     display: flex;
     justify-content: space-around;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-    margin-top: 2rem;
-}
-
-.w-icon{
-    width:40%;
+    
 }
 .w-temp{
     font-size: 2.5em;
