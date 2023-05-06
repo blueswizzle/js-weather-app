@@ -38,7 +38,7 @@ search.addEventListener("keydown", (e) => {
                 error.style.display = 'none';
                 error.classList.remove('fadeIn');
         
-                const wIcon = document.getElementById('background')
+                const backgroundVideo = document.getElementById('background')
                 const desc = document.querySelector('.w-desc');
                 const temp = document.querySelector('.w-temp');
                 const humidity = document.querySelector('.humidity');
@@ -46,32 +46,32 @@ search.addEventListener("keydown", (e) => {
                 const location = document.querySelector('.w-location');
                 switch(json.weather[0].main){
                     case 'Clear':
-                    wIcon.src = 'images/sunny.mp4';
+                    backgroundVideo.src = 'images/sunny.mp4';
                     break;
 
                     case 'Rain':
-                    wIcon.src = 'images/rain.mp4';
+                    backgroundVideo.src = 'images/rain.mp4';
                     break;
 
                     case 'Snow':
-                    wIcon.src = 'images/snow.mp4';
+                    backgroundVideo.src = 'images/snow.mp4';
                     break;
 
                     case 'Clouds':
-                    wIcon.src = 'images/cloudy.mp4';
+                    backgroundVideo.src = 'images/cloudy.mp4';
                     break;
 
                     case 'Haze':
                     case 'Mist':
-                    wIcon.src = 'images/mist.mp4';
+                    backgroundVideo.src = 'images/mist.mp4';
                     break;
 
                     case 'Thunderstorm':
-                    wIcon.src = 'images/thunderstorm.mp4';
+                    backgroundVideo.src = 'images/thunderstorm.mp4';
                     break;
 
                     default:
-                    wIcon.src = '';
+                    backgroundVideo.src = '';
 
                 }
                 if(measurement === "imperial"){
