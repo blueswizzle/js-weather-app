@@ -1,5 +1,5 @@
 
-const apiKey = "4a8eadf00ca658203f3cdf6c889a5c03";
+// const apiKey = "4a8eadf00ca658203f3cdf6c889a5c03"; Deactivated API Key
 const container = document.querySelector('.container');
 const search = document.getElementById('search');
 search.value = '';
