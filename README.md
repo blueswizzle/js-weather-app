@@ -16,6 +16,7 @@ Simply enter a location into the input field and press "enter". The site will fe
 - Displays weather temperature for user-specified location
 - Displays Humidity and Wind Speed for user-specified location
 - Background changes to depict the location's current weather conditions
+- Can change between imperial and metric measuring system
 
 ## Cloning
 
