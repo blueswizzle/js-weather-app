@@ -32,7 +32,6 @@ search.addEventListener("keydown", (e) => {
                     weather.style.display = 'none';
                     weatherDetails.style.display = 'none';
                     error.style.display = 'block';
-                    error.classList.add('fadeIn');
                     return;
                 }
                 error.style.display = 'none';
@@ -89,8 +88,7 @@ search.addEventListener("keydown", (e) => {
 
                 weather.style.display = '';
                 weatherDetails.style.display = '';
-                weather.classList.add('fadeIn');
-                weatherDetails.classList.add('fadeIn');
+             
                 container.style.height = '300px';
 
             })

@@ -22,7 +22,6 @@ body{
     filter: brightness(1.2);
     z-index: -2;
 }
-
 .container{
     background: rgba(0, 0, 0, 0.8);
     width: 90%;
@@ -130,17 +129,5 @@ body{
     font-size: 2em;
     font-weight: 500;
     margin-top: 1.2rem;
-}
-
-.fadeIn{
-    animation: 0.5s fadeIn forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeIn{
-    to {
-        scale: 1;
-        opacity: 1;
-    }
 }
 
