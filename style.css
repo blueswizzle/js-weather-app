@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    width: 90%;
+    max-width: 500px;
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 3rem;
+    height: 92px;
+    overflow: hidden;
+    transition: 0.35s ease-out;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    margin-top: 1.2rem;
+}
+.search-box input{
+    border: 0;
+    outline: 0;
+    color: #555;
+    background: #ebfffc;
+    padding: 1.3rem;
+    height: 1.5rem; 
+    border-radius: 25px;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 1.5rem;
+}
+.search-box button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    transition: 0.35s;
+}
+.search-box button img{
+    width: 1em;
+}
+.search-box button:hover{
+    transform: scale(1.6);
+}
+#search-button{
+    margin-right: 1.1rem;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-top: 2rem;
+}
+
+.w-icon{
+    width:40%;
+}
+.w-temp{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+.w-location{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.w-desc{
+    text-transform: uppercase;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+.col img{
+    width: 3em;
+    margin-right: 1.2rem;
+}
+
+.humidity, .wind{
+    font-size: 2em;
+    margin-top: -6px;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    display:none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
